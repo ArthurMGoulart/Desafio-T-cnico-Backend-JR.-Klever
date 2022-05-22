@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option go_package = "/pb";
+
+message ReadQuestionReq {
+  string id = 1;
+}
+
+message ReadQuestionRes {
+  Question question = 1;
+}
