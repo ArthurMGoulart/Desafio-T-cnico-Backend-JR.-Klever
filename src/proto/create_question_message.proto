@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option go_package = "/pb";
+
+message CreateQuestionReq {
+  Question question = 1; // Question id blank
+}
+
+message CreateQuestionRes {
+  Question question = 1; // Question id filled in
+}
