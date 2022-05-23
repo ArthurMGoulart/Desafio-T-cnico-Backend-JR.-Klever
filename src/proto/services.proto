@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option go_package = "/pb";
+
+import "send_upvote_message.proto";
+
+service UpvoteService {
+  rpc SendUpvote(stream SendUpvoteReq) returns (SendUpvoteRes);
+}

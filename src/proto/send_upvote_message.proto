@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option go_package = "/pb";
+
+import "upvote_message.proto";
+
+message SendUpvoteReq {
+  Upvote upvote = 1;
+}
+
+message SendUpvoteRes {
+  int64 status = 1;
+}
